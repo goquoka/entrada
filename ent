@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    double media, nota1, nota2;
+    String nome;
+    System.out.print("insira seu nome");
+    // nome = entrada.nextString();
+    System.out.print("insira a nota 1");
+    nota1 = entrada.nextInt();
+    System.out.print("insira a nota 2");
+    nota2 = entrada.nextInt();
+    media = (nota1 + nota2) / 2;
+    if (nota1 > nota2) {
+      System.out.print("nota 1 é maior");
+    } else {
+      System.out.print("nota 2 é maior");
+    }
+  }
+}
